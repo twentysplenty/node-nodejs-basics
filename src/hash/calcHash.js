@@ -11,4 +11,6 @@ const calculateHash = async () => {
 	return hash.update(data).digest('hex');
 };
 
-await calculateHash();
+const hash = await calculateHash();
+console.log(hash);
+
